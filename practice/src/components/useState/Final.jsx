@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-
-
-
-const Final = ({arr}) => {
+import { arr } from './MockData'
+const Final = () => {
   const [res,setRes]=useState(arr)
 
   function handleClick(id){

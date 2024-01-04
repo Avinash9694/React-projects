@@ -6,7 +6,7 @@ const FetchData = () => {
     const fetchfunc = async ()=>{
          const data1 =await fetch("https://api.github.com/users")
          const data2=await data1.json()
-         console.log(data2)
+       
          setData(data2);
     }
 

@@ -6,12 +6,12 @@ const ShortCircuit = () => {
     function handleClick(){
         setVal(!val)
     }
-    console.log(val)
+    
   return (
     <div>
         {val && <p>Short circuit</p>}
         {val || <p>ciruit</p>}
-       
+       {val ? <p>Hello user</p> : <p>Please login</p>}
         <button onClick={handleClick}>click me</button>
     </div>
 

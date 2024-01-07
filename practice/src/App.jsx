@@ -7,6 +7,7 @@ import FetchUser from './components/useEffect/FetchUser';
 import ShortCircuit from './components/useEffect/ShortCircuit';
 import UserLogin from './components/useEffect/UserLogin';
 import Timer from './components/useEffect/Timer';
+import Tour from './components/useEffect/Tour';
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       {/* <FetchData/> */}
       {/* <FetchUser/> */}
       {/* <ObjectExample/> */}
+      <Tour/>
       <ShortCircuit/>
       <UserLogin/>
       <Timer/>

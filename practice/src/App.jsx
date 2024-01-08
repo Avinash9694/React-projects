@@ -8,6 +8,7 @@ import ShortCircuit from './components/useEffect/ShortCircuit';
 import UserLogin from './components/useEffect/UserLogin';
 import Timer from './components/useEffect/Timer';
 import Tour from './components/useEffect/Tour';
+import ColourGenerator from './components/useEffect/ColourGenerator';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       {/* <FetchData/> */}
       {/* <FetchUser/> */}
       {/* <ObjectExample/> */}
+      <ColourGenerator/>
       <Tour/>
       <ShortCircuit/>
       <UserLogin/>

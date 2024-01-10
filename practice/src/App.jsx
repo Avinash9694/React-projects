@@ -21,11 +21,11 @@ function App() {
       {/* <FetchData/> */}
       {/* <FetchUser/> */}
       {/* <ObjectExample/> */}
-      {/* <ColourGenerator/>
+      <ColourGenerator/>
       <Tour/>
       <ShortCircuit/>
       <UserLogin/>
-      <Timer/> */}
+      <Timer/>
       <FetchCustomData />
     </>
   );

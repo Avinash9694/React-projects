@@ -12,7 +12,11 @@ import ColourGenerator from "./components/useEffect/ColourGenerator";
 import Toggle from "./components/customHook/Toggle";
 import FetchCustomData from "./components/customHook/FetchCustomData";
 import Navbar from "./components/contextApi/Navbar";
+import { useGlobalContext } from "./components/contextApi/context";
+import Stripe from "./components/contextApi/stripe-project/Stripe";
 function App() {
+  const { name } = useGlobalContext();
+
   return (
     <>
       {/* <Counter /> */}
@@ -27,7 +31,8 @@ function App() {
       <UserLogin/>
       <Timer/> */}
       {/* <FetchCustomData /> */}
-      <Navbar/>
+      {/* <Navbar /> */}
+      <Stripe />
     </>
   );
 }

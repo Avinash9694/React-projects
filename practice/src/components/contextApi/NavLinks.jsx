@@ -1,20 +1,19 @@
-import React from 'react'
-import UserContainer from './UserContainer'
+import React from "react";
+import UserContainer from "./UserContainer";
 
 const NavLinks = () => {
   return (
-    <div className='nav-container'>
-        <ul className="nav-link">
-            <li>
-                <a href="">home</a>
-            </li>
-            <li>
-                <a href="">about</a>
-            </li>
-        </ul>
-        <UserContainer />
+    <div className="nav-container">
+      <ul className="nav-link">
+        <li>
+          <a href="">home</a>
+        </li>
+        <li>
+          <a href="">about</a>
+        </li>
+      </ul>
+      <UserContainer />
     </div>
-  )
-}
-
-export default NavLinks
+  );
+};
+export default NavLinks;

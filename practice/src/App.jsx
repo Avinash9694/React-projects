@@ -11,7 +11,7 @@ import Tour from "./components/useEffect/Tour";
 import ColourGenerator from "./components/useEffect/ColourGenerator";
 import Toggle from "./components/customHook/Toggle";
 import FetchCustomData from "./components/customHook/FetchCustomData";
-
+import Navbar from "./components/contextApi/Navbar";
 function App() {
   return (
     <>
@@ -21,12 +21,13 @@ function App() {
       {/* <FetchData/> */}
       {/* <FetchUser/> */}
       {/* <ObjectExample/> */}
-{/*       <ColourGenerator/> */}
-{/*       <Tour/> */}
-{/*       <ShortCircuit/> */}
-{/*       <UserLogin/> */}
-{/*       <Timer/> */}
-      <FetchCustomData />
+      {/* <ColourGenerator/>
+      <Tour/>
+      <ShortCircuit/>
+      <UserLogin/>
+      <Timer/> */}
+      {/* <FetchCustomData /> */}
+      <Navbar/>
     </>
   );
 }

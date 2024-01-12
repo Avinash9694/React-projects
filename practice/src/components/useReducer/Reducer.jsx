@@ -1,28 +1,11 @@
 import React, { useReducer, useState } from "react";
+import { reducer } from "./reducer1";
+import { CLEAR_LIST, RESET_LIST, REMOVE_ITEM } from "./reducer1";
 import { Person } from "./data";
 
-const CLEAR_LIST = "CLEAR_LIST";
-const RESET_LIST = "RESET_LIST";
-const REMOVE_ITEM = "REMOVE_ITEM";
 const defaultStore = {
   people: Person,
   isLoading: false,
-};
-
-const reducer = (state, action) => {
-  if (action.type === CLEAR_LIST) {
-    return { ...state, people: [] };
-  }
-  if (action.type === RESET_LIST) {
-    return { ...state, people: Person };
-  }
-  if (action.type == REMOVE_ITEM) {
-    const newPeople = state.people.filter(
-      (person) => person.id !== action.payload.id
-    );
-    return { ...state, people: newPeople };
-  }
-  throw new Error(`not matching "${action.type}" - action type`);
 };
 
 const Reducer = () => {
@@ -39,7 +22,6 @@ const Reducer = () => {
     dispatch({ type: RESET_LIST });
   };
 
-  console.log(state);
   return (
     <>
       {state.people.length ? (

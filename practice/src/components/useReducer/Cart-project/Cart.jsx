@@ -1,6 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "./context";
-
+import "./Cart.css";
 // components
 import Navbar from "./Navbar";
 import CartContainer from "./CartContainer";

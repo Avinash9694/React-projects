@@ -14,6 +14,7 @@ import "./App.css";
 // import Navbar from "./components/contextApi/Navbar";
 // import { useGlobalContext } from "./components/contextApi/context";
 // import Stripe from "./components/contextApi/stripe-project/Stripe";
+import Cart from "./components/useReducer/Cart-project/Cart";
 import Reducer from "./components/useReducer/Reducer";
 function App() {
   // const { name } = useGlobalContext();
@@ -34,7 +35,8 @@ function App() {
       {/* <FetchCustomData /> */}
       {/* <Navbar /> */}
       {/* <Stripe /> */}
-      <Reducer />
+      {/* <Reducer /> */}
+      <Cart />
     </>
   );
 }
